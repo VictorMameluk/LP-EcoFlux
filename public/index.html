@@ -202,13 +202,6 @@
         <span>MTR & CDF</span>
       </a>
       <a 
-        href="#diferenciais" 
-        data-tracking="quicknav-diferenciais"
-        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-[#005BAB] dark:hover:text-blue-400 shrink-0 transition"
-      >
-        <span>Diferenciais</span>
-      </a>
-      <a 
         href="#cobertura" 
         data-tracking="quicknav-cobertura"
         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:text-[#005BAB] dark:hover:text-blue-400 shrink-0 transition"
@@ -520,190 +513,244 @@
           </p>
         </div>
 
-        <!-- Grid de 3 Cards com Superfície #F1F5F9 (Dark: Slate-800/90) e Bordas #E2E8F0 (Dark: Slate-700) -->
+        <!-- Grid de 3 Cards com Topo Visual Operacional + Conteúdo Sempre Visível -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <!-- Card 1: Resíduos Perigosos (Classe I) -->
-          <article class="bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between p-5 sm:p-7 relative">
+          <article class="group bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between overflow-hidden relative">
             <div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 text-xs font-bold px-3 py-1 rounded-full border border-slate-300 dark:border-slate-600 mb-4">
-                <svg class="w-3.5 h-3.5 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-                <span>CLASSE I • PERIGOSOS</span>
+              <!-- Faixa de Imagem Operacional (Zero CLS com aspect-video e dimensões explícitas) -->
+              <div class="relative aspect-video w-full overflow-hidden bg-slate-900 border-b border-[#E2E8F0] dark:border-slate-700">
+                <img 
+                  src="./assets/card_residuos_classe1.webp" 
+                  alt="Coleta e transporte de tambores e IBCs de resíduos industriais perigosos Classe I" 
+                  width="800" 
+                  height="450" 
+                  loading="lazy" 
+                  decoding="async"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+                <div class="absolute bottom-3 left-4 inline-flex items-center gap-1.5 bg-slate-950/85 backdrop-blur-xs text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20 shadow-sm">
+                  <svg class="w-3.5 h-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <span>CLASSE I • PERIGOSOS</span>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
-                Coleta e Transporte de Resíduos Perigosos (Classe I)
-              </h3>
-              
-              <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    <span>Quem atendemos:</span>
-                  </h4>
-                  <p>Indústrias, fábricas de tintas, curtumes, usinas de refino de óleo, oficinas pesadas e agronegócio.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                    </svg>
-                    <span>Principais resíduos:</span>
-                  </h4>
-                  <p>Óleos e graxas contaminadas, borras de tinta, solventes, EPIs e estopas contaminadas, embalagens químicas e lodos industriais.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Destinação Final Licenciada:</span>
-                  </h4>
-                  <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
-                    Coprocessamento em cimenteiras, incineração industrial ou aterro industrial Classe I homologado.
-                  </p>
+
+              <div class="p-5 sm:p-7 pb-0">
+                <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
+                  Coleta e Transporte de Resíduos Perigosos (Classe I)
+                </h3>
+                
+                <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-6">
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <span>Quem atendemos:</span>
+                    </h4>
+                    <p>Indústrias, fábricas de tintas, curtumes, usinas de refino de óleo, oficinas pesadas e agronegócio.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                      <span>Principais resíduos:</span>
+                    </h4>
+                    <p>Óleos e graxas contaminadas, borras de tinta, solventes, EPIs e estopas contaminadas, embalagens químicas e lodos industriais.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      <span>Destinação Final Licenciada:</span>
+                    </h4>
+                    <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
+                      Coprocessamento em cimenteiras, incineração industrial ou aterro industrial Classe I homologado.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Botão de Ação Verde de Alta Conversão -->
-            <a 
-              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Perigoso%20(Classe%20I)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              data-tracking="cta-card-classe1"
-              class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
-            >
-              <span>Cotar Resíduo Perigoso (Classe I)</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
+            <div class="p-5 sm:p-7 pt-0">
+              <a 
+                href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Perigoso%20(Classe%20I)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-tracking="cta-card-classe1"
+                class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
+              >
+                <span>Cotar Resíduo Perigoso (Classe I)</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
           </article>
 
           <!-- Card 2: Resíduos Infectantes (RSS) -->
-          <article class="bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between p-5 sm:p-7 relative">
+          <article class="group bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between overflow-hidden relative">
             <div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 text-xs font-bold px-3 py-1 rounded-full border border-slate-300 dark:border-slate-600 mb-4">
-                <svg class="w-3.5 h-3.5 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-                </svg>
-                <span>SAÚDE • INFECTANTES (GRUPOS A, B, E)</span>
+              <!-- Faixa de Imagem Operacional (Zero CLS com aspect-video e dimensões explícitas) -->
+              <div class="relative aspect-video w-full overflow-hidden bg-slate-900 border-b border-[#E2E8F0] dark:border-slate-700">
+                <img 
+                  src="./assets/card_residuos_infectantes.webp" 
+                  alt="Coleta especializada de bombonas brancas de resíduos infectantes e de serviços de saúde" 
+                  width="800" 
+                  height="450" 
+                  loading="lazy" 
+                  decoding="async"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+                <div class="absolute bottom-3 left-4 inline-flex items-center gap-1.5 bg-slate-950/85 backdrop-blur-xs text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20 shadow-sm">
+                  <svg class="w-3.5 h-3.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
+                  <span>SAÚDE • INFECTANTES (GRUPOS A, B, E)</span>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
-                Coleta e Transporte de Resíduos Infectantes
-              </h3>
-              
-              <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    <span>Quem atendemos:</span>
-                  </h4>
-                  <p>Clínicas médicas, odontológicas e veterinárias, laboratórios, farmácias e hospitais.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <span>Principais resíduos:</span>
-                  </h4>
-                  <p>Materiais biológicos, perfurocortantes, resíduos químicos de saúde e medicamentos vencidos.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Destinação Final Licenciada:</span>
-                  </h4>
-                  <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
-                    Tratamento térmico (autoclavagem ou incineração licenciada) e disposição final em conformidade com ANVISA e CONAMA.
-                  </p>
+
+              <div class="p-5 sm:p-7 pb-0">
+                <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
+                  Coleta e Transporte de Resíduos Infectantes
+                </h3>
+                
+                <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-6">
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <span>Quem atendemos:</span>
+                    </h4>
+                    <p>Clínicas médicas, odontológicas e veterinárias, laboratórios, farmácias e hospitais.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                      </svg>
+                      <span>Principais resíduos:</span>
+                    </h4>
+                    <p>Materiais biológicos, perfurocortantes, resíduos químicos de saúde e medicamentos vencidos.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      <span>Destinação Final Licenciada:</span>
+                    </h4>
+                    <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
+                      Tratamento térmico (autoclavagem ou incineração licenciada) e disposição final em conformidade com ANVISA e CONAMA.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Botão de Ação Verde de Alta Conversão -->
-            <a 
-              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Infectante%20%2F%20Sa%C3%BAde%20(Grupos%20A%2C%20B%2C%20E)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              data-tracking="cta-card-infectante"
-              class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
-            >
-              <span>Cotar Resíduo Infectante</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
+            <div class="p-5 sm:p-7 pt-0">
+              <a 
+                href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Infectante%20%2F%20Sa%C3%BAde%20(Grupos%20A%2C%20B%2C%20E)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-tracking="cta-card-infectante"
+                class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
+              >
+                <span>Cotar Resíduo Infectante</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
           </article>
 
           <!-- Card 3: Resíduos Não Perigosos (Classe II) -->
-          <article class="bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between p-5 sm:p-7 relative">
+          <article class="group bg-[#F1F5F9] dark:bg-slate-800/90 rounded-2xl shadow-sm hover:shadow-xl border border-[#E2E8F0] dark:border-slate-700 hover:border-slate-900 dark:hover:border-slate-400 transition-all duration-300 flex flex-col justify-between overflow-hidden relative">
             <div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 text-xs font-bold px-3 py-1 rounded-full border border-slate-300 dark:border-slate-600 mb-4">
-                <svg class="w-3.5 h-3.5 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-                <span>CLASSE II • NÃO PERIGOSOS</span>
+              <!-- Faixa de Imagem Operacional (Zero CLS com aspect-video e dimensões explícitas) -->
+              <div class="relative aspect-video w-full overflow-hidden bg-slate-900 border-b border-[#E2E8F0] dark:border-slate-700">
+                <img 
+                  src="./assets/card_residuos_classe2.webp" 
+                  alt="Caminhão Roll-on Roll-off coletando caçamba estacionária de resíduos industriais Classe II" 
+                  width="800" 
+                  height="450" 
+                  loading="lazy" 
+                  decoding="async"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+                <div class="absolute bottom-3 left-4 inline-flex items-center gap-1.5 bg-slate-950/85 backdrop-blur-xs text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20 shadow-sm">
+                  <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>CLASSE II • NÃO PERIGOSOS</span>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
-                Coleta e Transporte de Resíduos Classe II
-              </h3>
-              
-              <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    <span>Quem atendemos:</span>
-                  </h4>
-                  <p>Setor sucroenergético, frigoríficos, indústrias alimentícias, fazendas e grandes geradores.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                    <span>Principais resíduos:</span>
-                  </h4>
-                  <p>Resíduos orgânicos industriais, bagaços, cinzas, plásticos, papelão, madeira, sucata e resíduos gerais de processo.</p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Destinação Final Licenciada:</span>
-                  </h4>
-                  <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
-                    Reciclagem, compostagem industrial, valorização energética ou aterro sanitário devidamente licenciado.
-                  </p>
+
+              <div class="p-5 sm:p-7 pb-0">
+                <h3 class="text-xl font-bold text-[#0F172A] dark:text-white mb-4">
+                  Coleta e Transporte de Resíduos Classe II
+                </h3>
+                
+                <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-6">
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <span>Quem atendemos:</span>
+                    </h4>
+                    <p>Setor sucroenergético, frigoríficos, indústrias alimentícias, fazendas e grandes geradores.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                      </svg>
+                      <span>Principais resíduos:</span>
+                    </h4>
+                    <p>Resíduos orgânicos industriais, bagaços, cinzas, plásticos, papelão, madeira, sucata e resíduos gerais de processo.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
+                      <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      <span>Destinação Final Licenciada:</span>
+                    </h4>
+                    <p class="text-slate-800 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 p-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium">
+                      Reciclagem, compostagem industrial, valorização energética ou aterro sanitário devidamente licenciado.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Botão de Ação Verde de Alta Conversão -->
-            <a 
-              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20N%C3%A3o%20Perigoso%20(Classe%20II)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              data-tracking="cta-card-classe2"
-              class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
-            >
-              <span>Cotar Resíduo Classe II</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
+            <div class="p-5 sm:p-7 pt-0">
+              <a 
+                href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20N%C3%A3o%20Perigoso%20(Classe%20II)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                data-tracking="cta-card-classe2"
+                class="w-full inline-flex items-center justify-center gap-2 bg-[#16A34A] hover:bg-[#15803D] active:scale-95 text-white font-bold py-3.5 px-4 rounded-xl shadow-sm transition-all text-sm focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none"
+              >
+                <span>Cotar Resíduo Classe II</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
           </article>
 
         </div>
@@ -863,72 +910,9 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 🔹 DOBRA 4: Dores e Riscos Fiscais / Diferenciais (#diferenciais) -->
+    <!-- 🔹 DOBRA 4: Setores Atendidos e Cobertura Regional (#cobertura) -->
     <!-- ========================================================================= -->
-    <section id="diferenciais" class="py-20 bg-slate-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs font-bold text-red-400 bg-red-950/80 border border-red-800 uppercase tracking-widest px-3 py-1 rounded-full">
-            RESPONSABILIDADE LEGAL COMPARTILHADA
-          </span>
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-3 mb-4">
-            O gerador é corresponsável pelo resíduo até a destinação final
-          </h2>
-          <p class="text-base text-slate-300 leading-relaxed">
-            Pela Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010), sua empresa continua respondendo judicialmente pelo resíduo mesmo após a saída do caminhão. Veja os riscos que eliminamos da sua operação:
-          </p>
-        </div>
-
-        <!-- Grid de 3 Riscos Evitados -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2">1. Multas e Autuações na Fiscalização</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Evite pesadas multas municipais, estaduais e do IBAMA por transporte sem licença interestadual ou falta de MTR válido na rodovia.
-            </p>
-          </div>
-
-          <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2">2. Falta de Comprovação em Auditorias</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Nunca fique sem o seu CDF. Garantimos o encaminhamento apenas para receptores finais licenciados que emitem certificação oficial.
-            </p>
-          </div>
-
-          <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2">3. Falhas de Logística e Acúmulo no Pátio</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Cumprimos o cronograma combinado (pontual ou recorrente) para que o acúmulo de resíduos nunca trave sua produção ou gere risco sanitário.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 🔹 DOBRA 5: Setores Atendidos e Cobertura Regional (#cobertura) -->
-    <!-- ========================================================================= -->
-    <section id="cobertura" class="py-20 bg-[#F8FAFC] dark:bg-slate-900/60 transition-colors">
+    <section id="cobertura" class="py-20 bg-[#F8FAFC] dark:bg-slate-900/60 border-t border-[#E2E8F0] dark:border-slate-800 transition-colors">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
