@@ -27,9 +27,12 @@ if (!fs.existsSync('public')) {
 // 2. Copiar index.html
 fs.copyFileSync('index.html', path.join('public', 'index.html'));
 
-// 3. Copiar assets/
+// 3. Copiar assets/ e favicon.ico na raiz
 if (fs.existsSync('assets')) {
   copyDir('assets', path.join('public', 'assets'));
+  if (fs.existsSync(path.join('assets', 'favicon.ico'))) {
+    fs.copyFileSync(path.join('assets', 'favicon.ico'), path.join('public', 'favicon.ico'));
+  }
 }
 
 // 4. Copiar dist/
