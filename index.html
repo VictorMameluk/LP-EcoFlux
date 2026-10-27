@@ -27,17 +27,102 @@
   <!-- Open Graph / Redes Sociais -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="EcoFlux Soluções e Logística" />
   <meta property="og:title" content="Coleta e Transporte de Resíduos Classe I, II e Infectantes | EcoFlux" />
   <meta property="og:description" content="Coleta, transporte licenciado estadual/interestadual e destinação certificada de resíduos industriais, de saúde e agrícolas com MTR e CDF." />
-  <meta property="og:image" content="./assets/Logo_EcoFlux_Solucoes_e_Logistica.png" />
+  <meta property="og:image" content="https://lp-ecoflux.viktormameluk.workers.dev/assets/og_ecoflux_share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="EcoFlux Soluções e Logística - Coleta e Transporte de Resíduos" />
   <meta property="og:url" content="https://ecoflux.com.br" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coleta e Transporte de Resíduos Classe I, II e Infectantes | EcoFlux" />
+  <meta name="twitter:description" content="Coleta, transporte licenciado estadual/interestadual e destinação certificada de resíduos industriais, de saúde e agrícolas com MTR e CDF." />
+  <meta name="twitter:image" content="https://lp-ecoflux.viktormameluk.workers.dev/assets/og_ecoflux_share.jpg" />
 
-  <!-- Preconnect & Performance -->
-  <link rel="preload" as="image" href="./assets/Logo_EcoFlux_Solucoes_e_Logistica.png" fetchpriority="high" />
+  <!-- Core Web Vitals: Preload do Elemento LCP Real (Frota de Caminhões Hero) -->
+  <link rel="preload" as="image" href="./assets/hero_frota_caminhoes.webp" fetchpriority="high" type="image/webp" />
 
   <!-- Tailwind Output -->
   <link rel="stylesheet" href="./dist/output.css" />
+
+  <!-- Dados Estruturados Schema.org (JSON-LD: LocalBusiness + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EnvironmentalBusiness",
+        "@id": "https://ecoflux.com.br/#organization",
+        "name": "EcoFlux Soluções e Logística",
+        "url": "https://ecoflux.com.br",
+        "logo": "https://lp-ecoflux.viktormameluk.workers.dev/assets/logo_ecoflux_sem_fundo.webp",
+        "image": "https://lp-ecoflux.viktormameluk.workers.dev/assets/og_ecoflux_share.jpg",
+        "description": "Serviços de coleta, transporte estadual e interestadual de resíduos perigosos (Classe I), não perigosos (Classe II) e infectantes com emissão de MTR e CDF.",
+        "telephone": "+55-62-98286-4196",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Morrinhos",
+          "addressRegion": "GO",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          { "@type": "State", "name": "Goiás" },
+          { "@type": "State", "name": "Tocantins" },
+          { "@type": "State", "name": "Mato Grosso" },
+          { "@type": "State", "name": "Mato Grosso do Sul" },
+          { "@type": "State", "name": "Minas Gerais" },
+          { "@type": "State", "name": "Bahia" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quais licenças e documentos vocês fornecem para garantir conformidade na fiscalização?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possuímos todas as licenças ambientais pertinentes para o transporte estadual e interestadual de resíduos perigosos (Classe I), não perigosos (Classe II) e infectantes. Realizamos a emissão e gestão do MTR (Manifesto de Transporte de Resíduos) e garantimos o encaminhamento a receptores finais devidamente licenciados para emissão do CDF (Certificado de Destinação Final)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o cálculo do preço da coleta e do transporte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O orçamento é calculado de forma transparente com base em 3 variáveis: o tipo/classificação do resíduo, o volume estimado (peso ou metragem) e a localização da sua unidade (distância até o receptor final licenciado)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês atendem apenas em Goiás ou fazem coleta em outros estados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atendemos Goiânia, todo o estado de Goiás (GO) e operamos com licença interestadual para Tocantins (TO), Mato Grosso (MT), Mato Grosso do Sul (MS), Minas Gerais (MG) e Bahia (BA)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso contratar uma coleta única (pontual) ou apenas contrato mensal fixo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você pode contratar ambos! Realizamos desde coletas únicas emergenciais até coletas programadas recorrentes (semanais, quinzenais ou mensais)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Para onde os resíduos coletados são levados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Todos os resíduos têm rastreabilidade operacional e são entregues exclusivamente em receptores finais homologados e licenciados pelos órgãos ambientais (coprocessamento, incineração, autoclavagem, reciclagem ou aterros certificados)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body id="top" class="bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 antialiased selection:bg-[#005BAB] selection:text-white transition-colors duration-200">
 
@@ -47,25 +132,25 @@
   <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 shadow-xs transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
-      <!-- Logotipo Oficial EcoFlux Integrado e Imerso (Transparente + Variante Dark) -->
+      <!-- Logotipo Oficial EcoFlux Integrado e Imerso (WebP Otimizado + Variante Dark) -->
       <a href="#top" data-tracking="logo-header-home" class="flex items-center gap-3 shrink-0 focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-lg outline-none group" aria-label="EcoFlux Soluções e Logística - Início">
         <!-- Logo Modo Claro (Texto escuro integrado) -->
         <img 
-          src="./assets/logo_ecoflux_sem_fundo.png" 
+          src="./assets/logo_ecoflux_sem_fundo.webp" 
           alt="EcoFlux Soluções e Logística Ambiental" 
           width="210" 
           height="130"
+          decoding="async"
           class="h-11 sm:h-13 w-auto object-contain block dark:hidden transition-transform duration-200 group-hover:scale-[1.02]"
-          fetchpriority="high" 
         />
         <!-- Logo Modo Escuro (Texto inferior adaptado para alta legibilidade) -->
         <img 
-          src="./assets/logo_ecoflux_dark_clean.png" 
+          src="./assets/logo_ecoflux_dark_clean.webp" 
           alt="EcoFlux Soluções e Logística Ambiental" 
           width="210" 
           height="130"
+          decoding="async"
           class="h-11 sm:h-13 w-auto object-contain hidden dark:block transition-transform duration-200 group-hover:scale-[1.02]"
-          fetchpriority="high" 
         />
       </a>
 
@@ -83,7 +168,7 @@
 
         <!-- CTA Direto WhatsApp Header (Ação / Conversão Verde Alto Contraste) -->
         <a 
-          href="https://wa.me/55629915775742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%20para%20coleta%20e%20transporte%20de%20res%C3%ADduos." 
+          href="https://wa.me/5562982864196?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%20para%20coleta%20e%20transporte%20de%20res%C3%ADduos." 
           target="_blank" 
           rel="noopener noreferrer"
           data-tracking="cta-header-whatsapp" 
@@ -192,7 +277,7 @@
             <ul class="space-y-3.5 pt-2">
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-white/10 text-white flex items-center justify-center shrink-0 mt-0.5 border border-white/20" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
@@ -200,7 +285,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-white/10 text-white flex items-center justify-center shrink-0 mt-0.5 border border-white/20" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
@@ -208,7 +293,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-white/10 text-white flex items-center justify-center shrink-0 mt-0.5 border border-white/20" aria-hidden="true">
-                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
@@ -219,7 +304,7 @@
             <!-- CTAs do Hero -->
             <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a 
-                href="https://wa.me/55629915775742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20um%20especialista%20sobre%20coleta%20de%20res%C3%ADduos." 
+                href="https://wa.me/5562982864196?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20um%20especialista%20sobre%20coleta%20de%20res%C3%ADduos." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 data-tracking="cta-hero-whatsapp"
@@ -390,21 +475,24 @@
                   </label>
                 </div>
 
-                <!-- Mensagens de Alerta Client-Side -->
-                <div id="heroFormError" class="hidden text-xs text-red-600 bg-red-50 dark:bg-red-950/60 p-2.5 rounded-md border border-red-200 dark:border-red-900" role="alert">
+                <!-- Mensagens de Alerta e Confirmação Client-Side -->
+                <div id="heroFormError" class="hidden text-xs text-red-600 bg-red-50 dark:bg-red-950/60 p-2.5 rounded-md border border-red-200 dark:border-red-900" role="alert" aria-live="polite">
                   Por favor, preencha todos os campos obrigatórios para simular a cotação.
+                </div>
+                <div id="heroFormSuccess" class="hidden text-xs text-emerald-800 dark:text-emerald-200 bg-emerald-50 dark:bg-emerald-950/60 p-2.5 rounded-md border border-emerald-200 dark:border-emerald-800 font-medium" role="status" aria-live="polite">
+                  Redirecionando para o WhatsApp com sua solicitação pronta...
                 </div>
 
                 <!-- Botão de Envio WhatsApp (Ação Verde de Alto Contraste) -->
                 <button 
                   type="submit" 
-                  data-tracking="lead-form-whatsapp-submit" 
-                  class="w-full bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-[#16A34A]/30 transition-all flex items-center justify-center gap-2 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none cursor-pointer"
+                  data-tracking="lead-form-hero-submit" 
+                  class="w-full bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-[#16A34A]/30 transition-all flex items-center justify-center gap-2 text-sm sm:text-base focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none cursor-pointer disabled:opacity-70"
                 >
                   <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                   </svg>
-                  <span>Enviar para o WhatsApp e Receber Cotação</span>
+                  <span class="btn-label">Enviar para o WhatsApp e Receber Cotação</span>
                 </button>
               </form>
             </div>
@@ -451,7 +539,7 @@
               <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                     <span>Quem atendemos:</span>
@@ -460,7 +548,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
                     <span>Principais resíduos:</span>
@@ -469,7 +557,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                     <span>Destinação Final Licenciada:</span>
@@ -483,7 +571,7 @@
 
             <!-- Botão de Ação Verde de Alta Conversão -->
             <a 
-              href="https://wa.me/55629915775742?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Perigoso%20(Classe%20I)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Perigoso%20(Classe%20I)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
               target="_blank" 
               rel="noopener noreferrer"
               data-tracking="cta-card-classe1"
@@ -512,7 +600,7 @@
               <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                     <span>Quem atendemos:</span>
@@ -521,7 +609,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                     </svg>
                     <span>Principais resíduos:</span>
@@ -530,7 +618,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                     <span>Destinação Final Licenciada:</span>
@@ -544,7 +632,7 @@
 
             <!-- Botão de Ação Verde de Alta Conversão -->
             <a 
-              href="https://wa.me/55629915775742?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Infectante%20%2F%20Sa%C3%BAde%20(Grupos%20A%2C%20B%2C%20E)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20Infectante%20%2F%20Sa%C3%BAde%20(Grupos%20A%2C%20B%2C%20E)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
               target="_blank" 
               rel="noopener noreferrer"
               data-tracking="cta-card-infectante"
@@ -573,7 +661,7 @@
               <div class="space-y-4 text-sm text-[#334155] dark:text-slate-300 mb-8">
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                     <span>Quem atendemos:</span>
@@ -582,7 +670,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                     </svg>
                     <span>Principais resíduos:</span>
@@ -591,7 +679,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-[#0F172A] dark:text-white mb-1 flex items-center gap-1.5">
-                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-slate-900 dark:text-slate-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                     <span>Destinação Final Licenciada:</span>
@@ -605,7 +693,7 @@
 
             <!-- Botão de Ação Verde de Alta Conversão -->
             <a 
-              href="https://wa.me/55629915775742?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20N%C3%A3o%20Perigoso%20(Classe%20II)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
+              href="https://wa.me/5562982864196?text=Ol%C3%A1%2C%20equipe%20EcoFlux!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20r%C3%A1pida%3A%0A%0A%E2%80%A2%20*Tipo%20de%20Res%C3%ADduo%3A*%20N%C3%A3o%20Perigoso%20(Classe%20II)%0A%E2%80%A2%20*Volume%20Estimado%3A*%20%5BInformar%5D%0A%E2%80%A2%20*Cidade%20%2F%20UF%3A*%20%5BSua%20Cidade%20-%20UF%5D%0A%E2%80%A2%20*Necessita%20MTR%2FCDF%3A*%20Sim%20(MTR%20e%20CDF)%0A%0APoderiam%20me%20passar%20uma%20estimativa%20de%20valores%20e%20prazos%20para%20coleta%20e%20transporte%3F" 
               target="_blank" 
               rel="noopener noreferrer"
               data-tracking="cta-card-classe2"
@@ -647,7 +735,7 @@
           <div class="lg:col-span-7 bg-[#F1F5F9] dark:bg-slate-900 border border-[#E2E8F0] dark:border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 transition-colors">
             <h3 class="text-xl font-bold text-[#0F172A] dark:text-white border-b border-[#E2E8F0] dark:border-slate-800 pb-3 flex items-center gap-2">
               <span class="w-8 h-8 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </span>
@@ -657,7 +745,7 @@
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
                 <span class="w-7 h-7 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </span>
@@ -668,7 +756,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-7 h-7 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </span>
@@ -679,7 +767,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-7 h-7 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                   </svg>
                 </span>
@@ -690,7 +778,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-7 h-7 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
                   </svg>
@@ -702,7 +790,7 @@
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-7 h-7 rounded-lg bg-slate-200/80 dark:bg-slate-800 text-slate-900 dark:text-slate-100 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </span>
@@ -715,7 +803,7 @@
 
             <div class="pt-2">
               <a 
-                href="https://wa.me/55629915775742?text=Ol%C3%A1!%20Gostaria%20de%20validar%20a%20documenta%C3%A7%C3%A3o%20e%20licenciamento%20para%20os%20res%C3%ADduos%20da%20minha%20empresa." 
+                href="https://wa.me/5562982864196?text=Ol%C3%A1!%20Gostaria%20de%20validar%20a%20documenta%C3%A7%C3%A3o%20e%20licenciamento%20para%20os%20res%C3%ADduos%20da%20minha%20empresa." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 data-tracking="cta-documentacao-whatsapp"
@@ -733,7 +821,7 @@
           <div class="lg:col-span-5 bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-6">
             <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-3 flex items-center gap-2">
               <span class="w-8 h-8 rounded-lg bg-[#005BAB]/30 text-blue-400 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </span>
@@ -797,7 +885,7 @@
           
           <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
             <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
             </div>
@@ -809,7 +897,7 @@
 
           <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
             <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
@@ -821,7 +909,7 @@
 
           <div class="bg-slate-800/80 rounded-2xl p-7 border border-slate-700/80 hover:border-slate-500 transition">
             <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
               </svg>
@@ -860,7 +948,7 @@
           
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -872,7 +960,7 @@
 
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
@@ -884,7 +972,7 @@
 
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
@@ -896,7 +984,7 @@
 
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4 5 5 0 0110 0 4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
               </svg>
             </div>
@@ -908,7 +996,7 @@
 
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
@@ -920,7 +1008,7 @@
 
           <div class="bg-[#F1F5F9] dark:bg-slate-800/90 p-6 rounded-xl border border-[#E2E8F0] dark:border-slate-700 shadow-xs hover:shadow-md hover:border-slate-900 dark:hover:border-slate-400 transition">
             <div class="w-12 h-12 rounded-xl bg-slate-200/80 dark:bg-slate-700/80 text-slate-900 dark:text-slate-100 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
               </svg>
             </div>
@@ -1083,20 +1171,23 @@
             </div>
 
             <!-- Alertas e Feedback Client-Side -->
-            <div id="dedFormError" class="hidden text-sm text-red-600 bg-red-50 dark:bg-red-950/60 p-3 rounded-lg border border-red-200 dark:border-red-900" role="alert">
+            <div id="dedFormError" class="hidden text-sm text-red-600 bg-red-50 dark:bg-red-950/60 p-3 rounded-lg border border-red-200 dark:border-red-900" role="alert" aria-live="polite">
               Por favor, preencha o tipo de resíduo, volume e a localidade para prosseguir.
+            </div>
+            <div id="dedFormSuccess" class="hidden text-sm text-emerald-800 dark:text-emerald-200 bg-emerald-50 dark:bg-emerald-950/60 p-3 rounded-lg border border-emerald-200 dark:border-emerald-800 font-medium" role="status" aria-live="polite">
+              Solicitação pronta! Abrindo conversa com um especialista no WhatsApp...
             </div>
 
             <!-- Botão Submit (Ação Verde de Alto Contraste) -->
             <button 
               type="submit" 
-              data-tracking="lead-form-whatsapp-submit" 
-              class="w-full bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-[#16A34A]/30 transition-all flex items-center justify-center gap-3 text-base sm:text-lg focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none cursor-pointer"
+              data-tracking="lead-form-dedicated-submit" 
+              class="w-full bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-[#16A34A]/30 transition-all flex items-center justify-center gap-3 text-base sm:text-lg focus-visible:ring-2 focus-visible:ring-[#16A34A] outline-none cursor-pointer disabled:opacity-70"
             >
               <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
               </svg>
-              <span>Enviar para o WhatsApp e Receber Cotação</span>
+              <span class="btn-label">Enviar para o WhatsApp e Receber Cotação</span>
             </button>
           </form>
         </div>
@@ -1126,9 +1217,9 @@
         <div class="space-y-4">
           
           <details class="group bg-white dark:bg-slate-800/90 rounded-xl border border-[#E2E8F0] dark:border-slate-700 p-6 shadow-xs [&_summary::-webkit-details-marker]:hidden transition-colors">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
+            <summary data-tracking="faq-item-1" class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
               <span>1. Quais licenças e documentos vocês fornecem para garantir conformidade na fiscalização?</span>
-              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl">▾</span>
+              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl" aria-hidden="true">▾</span>
             </summary>
             <div class="mt-4 text-[#334155] dark:text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-100 dark:border-slate-700/80 pt-3">
               Possuímos todas as licenças ambientais pertinentes para o transporte estadual e interestadual de resíduos perigosos (Classe I), não perigosos (Classe II) e infectantes. Quando contratado o gerenciamento documental, realizamos a emissão e gestão do MTR (Manifesto de Transporte de Resíduos) e garantimos o encaminhamento a receptores finais devidamente licenciados para emissão do CDF (Certificado de Destinação Final).
@@ -1136,9 +1227,9 @@
           </details>
 
           <details class="group bg-white dark:bg-slate-800/90 rounded-xl border border-[#E2E8F0] dark:border-slate-700 p-6 shadow-xs [&_summary::-webkit-details-marker]:hidden transition-colors">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
+            <summary data-tracking="faq-item-2" class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
               <span>2. Como funciona o cálculo do preço da coleta e do transporte?</span>
-              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl">▾</span>
+              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl" aria-hidden="true">▾</span>
             </summary>
             <div class="mt-4 text-[#334155] dark:text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-100 dark:border-slate-700/80 pt-3">
               O orçamento é calculado de forma transparente com base em 3 variáveis: o tipo/classificação do resíduo, o volume estimado (peso ou metragem) e a localização da sua unidade (distância até o receptor final licenciado). Informando esses 3 dados no nosso WhatsApp, enviamos sua proposta rapidamente.
@@ -1146,9 +1237,9 @@
           </details>
 
           <details class="group bg-white dark:bg-slate-800/90 rounded-xl border border-[#E2E8F0] dark:border-slate-700 p-6 shadow-xs [&_summary::-webkit-details-marker]:hidden transition-colors">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
+            <summary data-tracking="faq-item-3" class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
               <span>3. Vocês atendem apenas em Goiás ou fazem coleta em outros estados?</span>
-              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl">▾</span>
+              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl" aria-hidden="true">▾</span>
             </summary>
             <div class="mt-4 text-[#334155] dark:text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-100 dark:border-slate-700/80 pt-3">
               Atendemos Goiânia, todo o estado de Goiás (GO) e operamos com licença interestadual para Tocantins (TO), Mato Grosso (MT), Mato Grosso do Sul (MS), Minas Gerais (MG) e Bahia (BA).
@@ -1156,9 +1247,9 @@
           </details>
 
           <details class="group bg-white dark:bg-slate-800/90 rounded-xl border border-[#E2E8F0] dark:border-slate-700 p-6 shadow-xs [&_summary::-webkit-details-marker]:hidden transition-colors">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
+            <summary data-tracking="faq-item-4" class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
               <span>4. Posso contratar uma coleta única (pontual) ou apenas contrato mensal fixo?</span>
-              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl">▾</span>
+              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl" aria-hidden="true">▾</span>
             </summary>
             <div class="mt-4 text-[#334155] dark:text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-100 dark:border-slate-700/80 pt-3">
               Você pode contratar ambos! Realizamos desde coletas únicas emergenciais (para retirada de passivos acumulados) até coletas programadas recorrentes (semanais, quinzenais ou mensais) de acordo com a necessidade operacional da sua empresa.
@@ -1166,9 +1257,9 @@
           </details>
 
           <details class="group bg-white dark:bg-slate-800/90 rounded-xl border border-[#E2E8F0] dark:border-slate-700 p-6 shadow-xs [&_summary::-webkit-details-marker]:hidden transition-colors">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
+            <summary data-tracking="faq-item-5" class="flex items-center justify-between cursor-pointer font-bold text-[#0F172A] dark:text-white text-base sm:text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005BAB] rounded-md">
               <span>5. Para onde os resíduos coletados são levados?</span>
-              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl">▾</span>
+              <span class="ml-4 shrink-0 text-[#005BAB] dark:text-blue-400 group-open:rotate-180 transition-transform font-mono text-xl" aria-hidden="true">▾</span>
             </summary>
             <div class="mt-4 text-[#334155] dark:text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-100 dark:border-slate-700/80 pt-3">
               Todos os resíduos têm rastreabilidade operacional e são entregues exclusivamente em receptores finais homologados e licenciados pelos órgãos ambientais (como unidades de coprocessamento, incineração, autoclavagem, reciclagem ou aterros industriais e sanitários certificados).
@@ -1196,7 +1287,7 @@
 
         <!-- CTA Final com Verde de Alta Conversão #16A34A -->
         <a 
-          href="https://wa.me/55629915775742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20iniciar%20meu%20atendimento%20para%20coleta%20de%20res%C3%ADduos." 
+          href="https://wa.me/5562982864196?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20iniciar%20meu%20atendimento%20para%20coleta%20de%20res%C3%ADduos." 
           target="_blank" 
           rel="noopener noreferrer"
           data-tracking="cta-footer-whatsapp" 
@@ -1223,10 +1314,11 @@
         <!-- Info da Empresa e Base Operacional (6 Colunas) -->
         <div class="md:col-span-6 space-y-4">
           <img 
-            src="./assets/logo_ecoflux_dark_clean.png" 
+            src="./assets/logo_ecoflux_dark_clean.webp" 
             alt="EcoFlux Soluções e Logística" 
             width="180" 
             height="111"
+            decoding="async"
             class="h-10 w-auto object-contain"
             loading="lazy"
           />
@@ -1244,19 +1336,19 @@
           <div>
             <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Enquadramento</h4>
             <ul class="space-y-2">
-              <li><a href="#servicos" class="hover:text-blue-400 transition">Resíduos Classe I</a></li>
-              <li><a href="#servicos" class="hover:text-blue-400 transition">Resíduos Infectantes</a></li>
-              <li><a href="#servicos" class="hover:text-blue-400 transition">Resíduos Classe II</a></li>
-              <li><a href="#cobertura" class="hover:text-blue-400 transition">Setores Atendidos</a></li>
+              <li><a href="#servicos" data-tracking="footer-nav-classe1" class="hover:text-blue-400 transition">Resíduos Classe I</a></li>
+              <li><a href="#servicos" data-tracking="footer-nav-infectantes" class="hover:text-blue-400 transition">Resíduos Infectantes</a></li>
+              <li><a href="#servicos" data-tracking="footer-nav-classe2" class="hover:text-blue-400 transition">Resíduos Classe II</a></li>
+              <li><a href="#cobertura" data-tracking="footer-nav-setores" class="hover:text-blue-400 transition">Setores Atendidos</a></li>
             </ul>
           </div>
           <div>
             <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Conformidade</h4>
             <ul class="space-y-2">
-              <li><a href="#documentacao" class="hover:text-blue-400 transition">Documentação e MTR</a></li>
-              <li><a href="#documentacao" class="hover:text-blue-400 transition">Garantia de CDF</a></li>
-              <li><a href="#cotacao-rapida" class="hover:text-blue-400 transition">Solicitar Cotação</a></li>
-              <li><a href="#faq" class="hover:text-blue-400 transition">Dúvidas Frequentes</a></li>
+              <li><a href="#documentacao" data-tracking="footer-nav-mtr" class="hover:text-blue-400 transition">Documentação e MTR</a></li>
+              <li><a href="#documentacao" data-tracking="footer-nav-cdf" class="hover:text-blue-400 transition">Garantia de CDF</a></li>
+              <li><a href="#cotacao-rapida" data-tracking="footer-nav-cotacao" class="hover:text-blue-400 transition">Solicitar Cotação</a></li>
+              <li><a href="#faq" data-tracking="footer-nav-faq" class="hover:text-blue-400 transition">Dúvidas Frequentes</a></li>
             </ul>
           </div>
         </div>
@@ -1276,7 +1368,7 @@
   <!-- ========================================================================= -->
   <aside aria-label="Atendimento rápido via WhatsApp">
     <a 
-      href="https://wa.me/55629915775742?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EcoFlux%20e%20gostaria%20de%20atendimento%20para%20coleta%20de%20res%C3%ADduos." 
+      href="https://wa.me/5562982864196?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20EcoFlux%20e%20gostaria%20de%20atendimento%20para%20coleta%20de%20res%C3%ADduos." 
       target="_blank" 
       rel="noopener noreferrer"
       data-tracking="whatsapp-floating"
@@ -1307,7 +1399,7 @@
     }
 
     // Configuração do WhatsApp da Empresa (Atualizado com número oficial)
-    const WHATSAPP_PHONE = '55629915775742';
+    const WHATSAPP_PHONE = '5562982864196';
 
     // ==========================================
     // 🌓 Sincronização Dinâmica com o Tema do SO do Cliente (Dark Padrão)
@@ -1330,42 +1422,85 @@
 
       const trackingId = target.getAttribute('data-tracking');
       
-      // Mapeamento dos CTAs e Navegação para GA4/GTM
+      // Mapeamento completo dos CTAs, Formulários, Botão Flutuante, FAQ e Navegação para GA4/GTM
       const trackingMap = {
-        'logo-header-home': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'logo_header_home' },
-        'cta-header-whatsapp': { event: 'cta_click', event_category: 'engagement', event_action: 'click', event_label: 'cta_header_whatsapp' },
-        'cta-hero-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click', event_label: 'cta_hero_whatsapp' },
-        'cta-hero-residuos': { event: 'navigation_click', event_category: 'engagement', event_action: 'click', event_label: 'ver_residuos_hero' },
-        'cta-card-classe1': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click', event_label: 'card_residuo_classe_1' },
-        'cta-card-infectante': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click', event_label: 'card_residuo_infectante' },
-        'cta-card-classe2': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click', event_label: 'card_residuo_classe_2' },
-        'cta-documentacao-whatsapp': { event: 'cta_click', event_category: 'engagement', event_action: 'click', event_label: 'cta_documentacao_whatsapp' },
-        'cta-footer-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click', event_label: 'cta_footer_whatsapp' },
-        'quicknav-residuos': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_residuos' },
-        'quicknav-documentacao': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_documentacao' },
-        'quicknav-diferenciais': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_diferenciais' },
-        'quicknav-cobertura': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_cobertura' },
-        'quicknav-cotacao': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_cotacao' },
-        'quicknav-faq': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_faq' }
+        'logo-header-home': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'logo_header_home', cta_location: 'header' },
+        'cta-header-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'cta_header_whatsapp', cta_location: 'header' },
+        'cta-hero-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'cta_hero_whatsapp', cta_location: 'hero' },
+        'cta-hero-residuos': { event: 'navigation_click', event_category: 'engagement', event_action: 'click', event_label: 'ver_residuos_hero', cta_location: 'hero' },
+        'cta-card-classe1': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'card_residuo_classe_1', cta_location: 'services_section' },
+        'cta-card-infectante': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'card_residuo_infectante', cta_location: 'services_section' },
+        'cta-card-classe2': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'card_residuo_classe_2', cta_location: 'services_section' },
+        'cta-documentacao-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'cta_documentacao_whatsapp', cta_location: 'documentation_section' },
+        'cta-footer-whatsapp': { event: 'cta_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'cta_footer_whatsapp', cta_location: 'footer_cta' },
+        'whatsapp-floating': { event: 'external_link_click', event_category: 'lead_generation', event_action: 'click_whatsapp', event_label: 'falar_com_especialista', cta_location: 'floating_button' },
+        'lead-form-hero-submit': { event: 'cta_click', event_category: 'engagement', event_action: 'form_submit_attempt', event_label: 'simulador_hero_submit_click', cta_location: 'hero_simulator' },
+        'lead-form-dedicated-submit': { event: 'cta_click', event_category: 'engagement', event_action: 'form_submit_attempt', event_label: 'simulador_dedicado_submit_click', cta_location: 'dedicated_simulator' },
+        'quicknav-residuos': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_residuos', cta_location: 'mobile_quicknav' },
+        'quicknav-documentacao': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_documentacao', cta_location: 'mobile_quicknav' },
+        'quicknav-diferenciais': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_diferenciais', cta_location: 'mobile_quicknav' },
+        'quicknav-cobertura': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_cobertura', cta_location: 'mobile_quicknav' },
+        'quicknav-cotacao': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_cotacao', cta_location: 'mobile_quicknav' },
+        'quicknav-faq': { event: 'quicknav_click', event_category: 'navigation', event_action: 'click', event_label: 'quicknav_faq', cta_location: 'mobile_quicknav' },
+        'faq-item-1': { event: 'faq_interaction', event_category: 'engagement', event_action: 'toggle_faq', event_label: 'faq_1_licencas_documentos', cta_location: 'faq_section' },
+        'faq-item-2': { event: 'faq_interaction', event_category: 'engagement', event_action: 'toggle_faq', event_label: 'faq_2_calculo_preco', cta_location: 'faq_section' },
+        'faq-item-3': { event: 'faq_interaction', event_category: 'engagement', event_action: 'toggle_faq', event_label: 'faq_3_estados_atendidos', cta_location: 'faq_section' },
+        'faq-item-4': { event: 'faq_interaction', event_category: 'engagement', event_action: 'toggle_faq', event_label: 'faq_4_coleta_unica_ou_mensal', cta_location: 'faq_section' },
+        'faq-item-5': { event: 'faq_interaction', event_category: 'engagement', event_action: 'toggle_faq', event_label: 'faq_5_destinacao_residuos', cta_location: 'faq_section' },
+        'footer-nav-classe1': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_classe1', cta_location: 'footer' },
+        'footer-nav-infectantes': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_infectantes', cta_location: 'footer' },
+        'footer-nav-classe2': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_classe2', cta_location: 'footer' },
+        'footer-nav-setores': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_setores', cta_location: 'footer' },
+        'footer-nav-mtr': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_mtr', cta_location: 'footer' },
+        'footer-nav-cdf': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_cdf', cta_location: 'footer' },
+        'footer-nav-cotacao': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_cotacao', cta_location: 'footer' },
+        'footer-nav-faq': { event: 'navigation_click', event_category: 'navigation', event_action: 'click', event_label: 'footer_nav_faq', cta_location: 'footer' }
       };
 
       if (trackingMap[trackingId]) {
         pushTracking(trackingMap[trackingId]);
+      } else {
+        pushTracking({
+          event: 'interaction_click',
+          event_category: 'engagement',
+          event_action: 'click',
+          event_label: trackingId
+        });
       }
     });
 
-    // Helper de envio dos formulários simuladores
-    function setupSimulatorForm(formId, errorId, fieldIds) {
+    // Helper de envio resiliente dos formulários simuladores
+    function setupSimulatorForm(formId, errorId, successId, fieldIds) {
       const form = document.getElementById(formId);
       const errorEl = document.getElementById(errorId);
+      const successEl = document.getElementById(successId);
       if (!form) return;
+
+      const requiredFields = [
+        document.getElementById(fieldIds.waste),
+        document.getElementById(fieldIds.volume),
+        document.getElementById(fieldIds.location)
+      ];
+
+      // Limpa estado de erro individual assim que o usuário digita/seleciona
+      requiredFields.forEach(function(field) {
+        if (!field) return;
+        ['input', 'change'].forEach(function(evtName) {
+          field.addEventListener(evtName, function() {
+            if (field.value.trim()) {
+              field.classList.remove('border-red-500', 'ring-2', 'ring-red-500/30');
+              field.removeAttribute('aria-invalid');
+            }
+          });
+        });
+      });
 
       form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const wasteEl = document.getElementById(fieldIds.waste);
-        const volumeEl = document.getElementById(fieldIds.volume);
-        const locationEl = document.getElementById(fieldIds.location);
+        const wasteEl = requiredFields[0];
+        const volumeEl = requiredFields[1];
+        const locationEl = requiredFields[2];
         const docsEl = document.getElementById(fieldIds.docs);
 
         const waste = wasteEl ? wasteEl.value.trim() : '';
@@ -1373,19 +1508,54 @@
         const location = locationEl ? locationEl.value.trim() : '';
         const docs = (docsEl && docsEl.checked) ? 'Sim (MTR e CDF)' : 'Não informado';
 
-        // Validação Client-Side instantânea
-        if (!waste || !volume || !location) {
+        // Validação Client-Side com destaque visual e foco no 1º campo inválido
+        let firstInvalid = null;
+        requiredFields.forEach(function(field) {
+          if (!field) return;
+          if (!field.value.trim()) {
+            field.classList.add('border-red-500', 'ring-2', 'ring-red-500/30');
+            field.setAttribute('aria-invalid', 'true');
+            if (!firstInvalid) firstInvalid = field;
+          } else {
+            field.classList.remove('border-red-500', 'ring-2', 'ring-red-500/30');
+            field.removeAttribute('aria-invalid');
+          }
+        });
+
+        if (firstInvalid) {
+          if (successEl) successEl.classList.add('hidden');
           if (errorEl) errorEl.classList.remove('hidden');
+          firstInvalid.focus();
+          pushTracking({
+            event: 'form_validation_error',
+            event_category: 'engagement',
+            event_action: 'validation_failed',
+            event_label: 'simulador_whatsapp_' + formId
+          });
           return;
         }
 
         if (errorEl) errorEl.classList.add('hidden');
+        if (successEl) successEl.classList.remove('hidden');
 
-        // Disparo do evento lead_generated
+        // Estado de carregamento/confirmação no botão submit
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const labelSpan = submitBtn ? submitBtn.querySelector('.btn-label') : null;
+        const originalText = labelSpan ? labelSpan.textContent : '';
+        if (submitBtn && labelSpan) {
+          submitBtn.disabled = true;
+          labelSpan.textContent = 'Abrindo WhatsApp...';
+          setTimeout(function() {
+            submitBtn.disabled = false;
+            labelSpan.textContent = originalText;
+          }, 2500);
+        }
+
+        // Disparo do evento de conversão principal (lead_generated + generate_lead padrão GA4)
         pushTracking({
-          event: 'lead_generated',
+          event: 'generate_lead',
           event_category: 'lead_generation',
-          event_action: 'submit',
+          event_action: 'form_submit_success',
           event_label: 'simulador_whatsapp_' + formId,
           waste_type: waste,
           waste_volume: volume,
@@ -1414,14 +1584,14 @@
     }
 
     // Inicialização dos 2 Simuladores (Hero e Dobra Dedicada)
-    setupSimulatorForm('heroSimulatorForm', 'heroFormError', {
+    setupSimulatorForm('heroSimulatorForm', 'heroFormError', 'heroFormSuccess', {
       waste: 'hero_waste_type',
       volume: 'hero_volume',
       location: 'hero_location',
       docs: 'hero_docs'
     });
 
-    setupSimulatorForm('dedicatedSimulatorForm', 'dedFormError', {
+    setupSimulatorForm('dedicatedSimulatorForm', 'dedFormError', 'dedFormSuccess', {
       waste: 'ded_waste_type',
       volume: 'ded_volume',
       location: 'ded_location',
