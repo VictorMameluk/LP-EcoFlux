@@ -24,8 +24,11 @@ if (!fs.existsSync('public')) {
   fs.mkdirSync('public', { recursive: true });
 }
 
-// 2. Copiar index.html
+// 2. Copiar index.html e _headers
 fs.copyFileSync('index.html', path.join('public', 'index.html'));
+if (fs.existsSync('_headers')) {
+  fs.copyFileSync('_headers', path.join('public', '_headers'));
+}
 
 // 3. Copiar assets/ e favicon.ico na raiz
 if (fs.existsSync('assets')) {
