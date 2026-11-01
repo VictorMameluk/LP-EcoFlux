@@ -8,11 +8,11 @@
   "workers_dev": false,
   "routes": [
     {
-      "pattern": "ecoflux.net.br/*",
+      "pattern": "ecoflux.net.br",
       "custom_domain": true
     },
     {
-      "pattern": "www.ecoflux.net.br/*",
+      "pattern": "www.ecoflux.net.br",
       "custom_domain": true
     }
   ]
