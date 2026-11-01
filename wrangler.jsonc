@@ -4,5 +4,16 @@
   "compatibility_date": "2026-10-19",
   "assets": {
     "directory": "./public"
-  }
+  },
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "ecoflux.net.br/*",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.ecoflux.net.br/*",
+      "custom_domain": true
+    }
+  ]
 }
